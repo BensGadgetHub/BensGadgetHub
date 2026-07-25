@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Ben's Gadget & Accessories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header>
+    <nav class="navbar">
+        <div class="logo">Ben's Gadget & Accessories</div>
+    
+        <ul class="nav-links">
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="cart">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+          </ul>
+      </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to Ben's Gadget & Accessories</h1>
+
+    <p>Your one-stop shop for quality phone accessories.</p>
+
+    <button id="shop-btn">Shop Now</button>
+</section>
+<section class="categories">
+
+    <h2>Shop By Category</h2>
+
+    <div class="category-container">
+
+        <div class="category-card" id="headphone-category">
+
+            <div class="category-image">
+                <img src="images/headphones.jpg" alt="Headphones">
+            </div>
+
+            <h3>Headphones</h3>
+            <p>Premium sound and wireless headphones</p>
+
+        </div>
+
+        <div class="category-card" id="powerbank-category">
+           
+            <div class="category-image">
+                <img src="images/powerbank.jpg" alt="Power Bank">
+            </div>
+
+            <h3>Power Banks</h3>
+            <p>Reliable power anywhere, anytime</p>
+       
+        </div>
+
+        <div class="category-card" id="charger-category">
+
+            <div class="category-image">
+                <img src="images/charger.jpg" alt="charger">
+            </div>
+
+            <h3>Chargers</h3>
+            <p>Fast and durable phone chargers</p>
+        
+        </div>
+
+      <div class="category-card" id="screen-guards-category">
+
+    <div class="category-image">
+        <img src="images/tempered-glass.jpg" alt="Screen Guards">
+    </div>
+
+    <h3>Screen Guards</h3>
+
+    <p>Protect your phone screen from scratches and cracks</p>
+
+</div>  
+
+    </div>
+
+</section>
+<section class="about" id="about">
+
+    <h2>About Ben's Gadget & Accessories</h2>
+
+    <p>
+        Ben's Gadget & Accessories is your trusted destination for quality
+        phone accessories. We provide premium headphones, chargers, power banks,
+        earbuds, cables and other mobile accessories at affordable prices.
+    </p>
+
+    <p>
+        Our goal is to provide reliable products and excellent customer service
+        while making sure every customer gets the best value for their money.
+    </p>
+
+</section>
+<section class="products" id="products">
+
+    <h2>Featured Products</h2>
+
+   <div class="search-box">
+      <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search for products..."
+    >
+</div>
+
+<p id="no-results" class="no-results">
+    😕 No products found.
+</p>
+
+    <div class="product-container">
+
+        <div class="product-card">
+
+            <span class="badge new">New</span>
+
+            <img src="images/headphones.jpg" alt="premium wireless headphones">
+
+            <h3>Wireless Headphones</h3>
+
+            <p>₦18,500</p>
+
+            <button class="view-product">View Product</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge best-seller">Best Seller</span>
+
+            <img src="images/powerbank.jpg" alt="Power Bank">
+
+            <h3>itel Power Bank</h3>
+
+            <p>₦16,000</p>
+
+            <button class="view-product">View Product</button>  
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/charger.jpg" alt="Charger">
+
+            <h3>Fast Charger</h3>
+
+            <p>₦7,500</p>
+
+           <button class="view-product">View Product</button>
+
+        </div>
+
+        <div class="product-card">
+
+          <img src="images/earbuds.jpg" alt="wireless Earbuds">
+
+          <h3>Wireless Earbuds</h3>
+
+          <p>₦5,000</p>
+
+          <button class="view-product">View Product</button>
+
+      </div>
+    
+        <div class="product-card">
+
+          <img src="images/airpodpro.jpg" alt="AirPods Pro">
+
+          <h3>Airpods Pro</h3>
+
+          <p>₦5,000</p> 
+
+          <button class="view-product">View Product</button>
+
+    </div>
+
+        <div class="product-card">
+
+           <img src="images/shplus-50w-charger.jpg" alt="shplus 50w charger">
+
+           <h3>Double Fast Charge</h3>
+
+           <p>₦5,000</p>
+
+           <button class="view-product">View Product</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/oraimo-usb-cord.jpg" alt="usb data cable">
+
+            <h3>USB Cord</h3>
+
+            <p>₦2,000</p>
+
+            <button class="view-product">View Product</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="badge hot">Hot</span>
+
+            <img src="images/org-oraimo-iphone-cord.jpg" alt="iphone cable">
+
+            <h3>iPhone cable</h3>
+
+            <p>₦3,500</p>
+
+            <button class="view-product">View Product</button>
+
+        </div>
+        
+       <div class="product-card">
+
+           <span class="badge hot">Hot</span>
+
+           <img src="images/oraimo-powerbank.jpg" alt="power bank">
+
+           <h3>oraimo Power Bank</h3>
+
+           <p>₦16,000</p>
+
+           <button class="view-product">View Product</button>
+
+       </div>
+
+     <div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/tempered-glass.jpg" alt="Tempered Glass Screen Guard">
+
+    <h3>iPhone Privacy Screen Guard</h3>
+
+    <p>₦1,500</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/new-age-44000mah.jpg"
+         alt="New Age 44000mAh Power Bank">
+
+    <h3>New Age 44,000mAh Power Bank</h3>
+
+    <p>₦41000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge best-seller">Best Seller</span>
+
+    <img src="images/new-age-powerbank.jpg"
+         alt="New Age 33000mAh Power Bank">
+
+    <h3>New Age 33,000mAh Power Bank</h3>
+
+    <p>₦28000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge best-seller">Best Seller</span>
+
+    <img src="images/zealot-s67.jpg"
+         alt="Zealot S67 Bluetooth Speaker">
+
+    <h3>Zealot S67 Bluetooth Speaker</h3>
+
+    <p>₦62000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge best-seller">Best Seller</span>
+
+    <img src="images/zealot-s89.jpg"
+         alt="Zealot S89 Bluetooth Speaker">
+
+    <h3>Zealot S89 Bluetooth Speaker</h3>
+
+    <p>₦230000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/cat-headset.jpg"
+         alt="Cat Ear Headset">
+
+    <h3>Cat Ear Headset</h3>
+
+    <p>₦10000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/magnetic-neckband.jpg"
+         alt="Magnetic Neckband">
+
+    <h3>Magnetic Neckband</h3>
+
+    <p>₦9,000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge best-seller">Best Seller</span>
+
+    <img src="images/shplus-usb-cord.jpg"
+         alt="SHPLUS USB Cord">
+
+    <h3>SHPLUS USB Cord</h3>
+
+    <p>₦2,000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+ 
+
+<div class="product-card">
+
+    <span class="badge hot">Hot</span>
+
+    <img src="images/shplus-iphone-cord.jpg"
+         alt="SHPLUS iPhone Cord">
+
+    <h3>SHPLUS iPhone Cord</h3>
+
+    <p>₦2000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/samsung-ledbud.jpg"
+         alt="Samsung LED Buds">
+
+    <h3>Samsung LED Buds</h3>
+
+    <p>₦12,000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/oraimo-flat-cords.jpg"
+         alt="Oraimo Flat Cord">
+
+    <h3>Oraimo Flat Cord</h3>
+
+    <p>₦3000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/jamax-earpiece.jpg"
+         alt="Jamax Earpiece">
+
+    <h3>Jamax Earpiece</h3>
+
+    <p>₦2000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge best-seller">Best Seller</span>
+
+    <img src="images/redmi-powerbank.jpg"
+         alt="Redmi Power Bank">
+
+    <h3>Redmi Power Bank</h3>
+
+    <p>₦18,000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/iphone-lightning-cable.jpg"
+         alt="iPhone Lightning Cable">
+
+    <h3>iPhone Lightning Cable</h3>
+
+    <p>₦2,500</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/shplus-iphone-earpiece.jpg"
+         alt="SHPLUS iPhone Earpiece">
+
+    <h3>SHPLUS iPhone Earpiece</h3>
+
+    <p>₦5,000</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/oraimo-copy-earpiece.jpg"
+         alt="Oraimo Copy Earpiece">
+
+    <h3>Oraimo Copy Earpiece</h3>
+
+    <p>₦1500</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+<div class="product-card">
+
+    <span class="badge new">New</span>
+
+    <img src="images/poolee-iphone-cord.jpg"
+         alt="Poolee iPhone Cord">
+
+    <h3>Poolee iPhone Cord</h3>
+
+    <p>₦3,500</p>
+
+    <button class="view-product">View Product</button>
+
+</div>
+
+</div>
+
+  </section>
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Have questions or want to place an order?</p>
+
+    <p>📞 Phone: +2349012180222</p>
+
+    <p>📍 Location: Nigeria</p>
+
+    <a href="https://wa.me/2348077632057" class="whatsapp">
+        Chat With Us On WhatsApp
+    </a>
+
+</section>
+<div class="cart-modal" id="cart-modal">
+
+    <div class="cart-content">
+
+        <span class="close-cart">&times;</span>
+
+        <h2>Your Cart</h2>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <h3>Total: ₦<span id="cart-total">0</span></h3>
+
+        <button class="clear-cart-btn" id="clear-cart-btn">
+            Clear Cart 
+        </button>
+        
+        <button class="checkout-btn" id="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+    
+
+</div>
+
+<div class="product-modal" id="product-modal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modal-image" src="" alt="">
+
+        <h2 id="modal-name"></h2>
+
+        <p id="modal-price"></p>
+
+        <p id="modal-description"></p>
+
+        <button id="modal-add-cart">Add to Cart</button>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <h3>Ben's Gadget & Accessories</h3>
+    <p>Your trusted phone accessory store.</p>
+    <p>📞 +2349012180222</p>
+    <p>📍Nigeria </p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

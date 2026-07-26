@@ -654,4 +654,52 @@ body{
 
 }
 
+/* Floating Cart */
 
+.floating-cart{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background: #00bfff;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 25px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    z-index: 1000;
+}
+
+#floating-cart-count{
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    width: 22px;
+    height: 22px;
+
+    background: red;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: bold;
+}

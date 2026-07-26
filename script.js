@@ -76,6 +76,7 @@ if(homeLink){
 }
 
 const cartCount = document.getElementById("cart-count");
+const floatingCartCount = document.getElementById("floating-cart-count");
 
 let count = 0;
 
@@ -420,6 +421,8 @@ const cart = document.getElementById("cart");
 const cartModal = document.getElementById("cart-modal");
 const closeCart = document.querySelector(".close-cart");
 
+const floatingCart = document.getElementById("floating-cart");
+
 // Open cart
 if(cart){
 
@@ -434,7 +437,18 @@ if(cart){
     });
 
 }
+// Open cart from floating button
+if(floatingCart){
 
+    floatingCart.addEventListener("click", function(){
+
+        if(cartModal){
+            cartModal.style.display = "flex";
+        }
+
+    });
+
+}
 
 // Close cart
 if(closeCart){
@@ -547,11 +561,12 @@ function updateCart(){
             count++;
 
             if(cartCount){
+    cartCount.textContent = count;
+}
 
-                cartCount.textContent = count;
-
-            }
-
+if(floatingCartCount){
+    floatingCartCount.textContent = count;
+}
             updateCart();
 
         });
@@ -578,10 +593,12 @@ function updateCart(){
                 count--;
 
                 if(cartCount){
+    cartCount.textContent = count;
+}
 
-                    cartCount.textContent = count;
-
-                }
+if(floatingCartCount){
+    floatingCartCount.textContent = count;
+}
 
                 updateCart();
 
@@ -608,11 +625,13 @@ function updateCart(){
 
             cartProducts.splice(index, 1);
 
-            if(cartCount){
+           if(cartCount){
+    cartCount.textContent = count;
+}
 
-                cartCount.textContent = count;
-
-            }
+if(floatingCartCount){
+    floatingCartCount.textContent = count;
+}
 
             updateCart();
 
@@ -699,13 +718,13 @@ if(clearCartButton){
         cartProducts = [];
 
         count = 0;
+if(cartCount){
+    cartCount.textContent = count;
+}
 
-        if(cartCount){
-
-            cartCount.textContent = count;
-
-        }
-
+if(floatingCartCount){
+    floatingCartCount.textContent = count;
+}
         updateCart();
 
     });

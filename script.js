@@ -374,11 +374,13 @@ if(modalAddCart){
 
         count++;
 
-        if(cartCount){
+       if(cartCount){
+    cartCount.textContent = count;
+}
 
-            cartCount.textContent = count;
-
-        }
+if(floatingCartCount){
+    floatingCartCount.textContent = count;
+}
 
         updateCart();
 
